@@ -16,7 +16,7 @@ trait FrontendPackages
 
         static::updateNodePackages(fn ($packages) => [
 
-            '@inertiajs/vue3' => '^1.0.15',
+            '@inertiajs/vue3' => '^2.0.0',
 
             '@tailwindcss/forms' => '^0.5.6',
             '@vitejs/plugin-vue' => '^5.0.4',
@@ -45,7 +45,7 @@ trait FrontendPackages
 
             'remixicon' => '^4.2.0',
             'tailwindcss' => '^3.3.7',
-            'unplugin-vue-components' => '^0.27.1',
+            'unplugin-vue-components' => '^0.28.0',
             'vue' => '^3.4.21',
 
         ] + $packages);
