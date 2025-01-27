@@ -13,6 +13,7 @@ use Modular\Modular\Console\MakeModelCommand;
 use Modular\Modular\Console\MakeModuleCommand;
 use Modular\Modular\Console\MakePageCommand;
 use Modular\Modular\Console\MakeRouteCommand;
+use Modular\Modular\Console\MakeSeederCommand;
 use Modular\Modular\Console\MakeServiceCommand;
 use Modular\Modular\Console\MakeTestCommand;
 use Modular\Modular\Console\MakeValidateCommand;
@@ -48,6 +49,7 @@ class ModularServiceProvider extends PackageServiceProvider
             ->hasCommand(MakeComponentCommand::class)
             ->hasCommand(MakeTestCommand::class)
             ->hasCommand(MakeMigrationCommand::class)
+            ->hasCommand(MakeSeederCommand::class)
             ->hasCommand(PublishLaravelTranslationsCommand::class)
             ->hasCommand(PublishSiteFilesCommand::class)
             ->hasCommand(MakeFactoryCommand::class)
