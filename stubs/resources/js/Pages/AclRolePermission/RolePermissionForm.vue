@@ -5,7 +5,7 @@
     <AppCard>
         <template #title>
             {{ __('Role Permissions for') }}:
-            <span class="text-skin-primary-10">{{ role.name }}</span>
+            <span class="text-primary-10">{{ role.name }}</span>
         </template>
         <template #content>
             <div v-if="chunks.length">

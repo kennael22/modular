@@ -1,7 +1,7 @@
 <template>
     <div v-if="showInputSearch" class="mb-3 block">
         <div class="rounded-tl rounded-tr">
-            <label for="search" class="sr-only">Search</label>
+            <label for="sidebar-search" class="sr-only">Search</label>
             <div class="flex items-center align-middle">
                 <div
                     class="pointer-events-none absolute flex items-center pl-3"
@@ -9,7 +9,7 @@
                     <i class="ri-search-line"></i>
                 </div>
                 <AppInputText
-                    id="search"
+                    id="sidebar-search"
                     v-model="searchTerm"
                     :placeholder="__('Search...')"
                     class="w-full pl-9"
@@ -17,7 +17,7 @@
 
                 <AppButton
                     v-if="searchTerm"
-                    class="btn ml-1 border border-skin-neutral-8 bg-skin-neutral-5 hover:bg-skin-neutral-8"
+                    class="btn border-neutral-8 bg-neutral-5 hover:bg-neutral-8 ml-1 border"
                     @click="searchTerm = ''"
                 >
                     <i class="ri-close-line"></i>

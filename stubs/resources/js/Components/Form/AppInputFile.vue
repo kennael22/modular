@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-col items-center space-y-4 rounded-lg border-2 border-dashed border-skin-neutral-6 p-4"
+        class="border-neutral-6 flex flex-col items-center space-y-4 rounded-lg border-2 border-dashed p-4"
     >
         <input
             ref="fileInputRef"
@@ -29,11 +29,11 @@
 
         <div v-if="file" class="text-center text-sm">
             <p>
-                <strong class="text-skin-neutral-12">File Name:</strong>
+                <strong class="text-neutral-12">File Name:</strong>
                 {{ file.name }}
             </p>
             <p>
-                <strong class="text-skin-neutral-12">File Size:</strong>
+                <strong class="text-neutral-12">File Size:</strong>
                 {{ file.size }} bytes
             </p>
         </div>
@@ -41,7 +41,7 @@
             <img
                 :src="imagePreview"
                 alt="image preview"
-                class="h-auto max-w-full rounded shadow-md"
+                class="h-auto max-w-full rounded-sm shadow-md"
             />
         </div>
     </div>

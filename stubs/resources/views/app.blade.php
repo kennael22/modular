@@ -24,7 +24,7 @@
     @inertiaHead
 </head>
 
-<body class="font-sans antialiased h-full">
+<body class="h-full font-sans antialiased">
     @inertia
 
     <x-modular-translations></x-modular-translations>

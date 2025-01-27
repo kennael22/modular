@@ -67,6 +67,8 @@ const items = menu.items
 </script>
 
 <style scoped>
+@reference "tailwindcss/theme";
+
 .fade-enter-active,
 .fade-leave-active {
     @apply transition-opacity duration-300 ease-out;

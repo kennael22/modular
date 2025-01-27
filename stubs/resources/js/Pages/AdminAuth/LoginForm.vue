@@ -4,7 +4,7 @@
         <AppAuthLogo />
 
         <form @submit.prevent="submitForm">
-            <AppCard class="w-80 space-y-2 bg-skin-neutral-2">
+            <AppCard class="bg-neutral-2 w-80 space-y-2">
                 <template #title>
                     <h3
                         class="text-center text-lg font-semibold tracking-tight"

@@ -1,6 +1,6 @@
 <template>
     <div
-        class="shadow-xs flex items-center rounded-lg border border-skin-neutral-4 bg-skin-neutral-2 p-4 transition-all duration-300 hover:cursor-pointer hover:bg-skin-neutral-3"
+        class="border-neutral-4 bg-neutral-2 hover:bg-neutral-3 flex items-center rounded-lg border p-4 shadow-2xs transition-all duration-300 hover:cursor-pointer"
         @click="$inertia.visit(route(link))"
     >
         <div class="mr-4 rounded-full px-3 py-2" :class="color">
@@ -46,19 +46,21 @@ defineProps({
 </script>
 
 <style scoped>
+@reference "../../../../css/app.css";
+
 .info {
-    @apply bg-skin-info-light text-skin-info;
+    @apply bg-info-light text-info;
 }
 
 .success {
-    @apply bg-skin-success-light text-skin-success;
+    @apply bg-success-light text-success;
 }
 
 .warning {
-    @apply bg-skin-warning-light text-skin-warning;
+    @apply bg-warning-light text-warning;
 }
 
 .danger {
-    @apply bg-skin-error-light text-skin-error;
+    @apply bg-error-light text-error;
 }
 </style>

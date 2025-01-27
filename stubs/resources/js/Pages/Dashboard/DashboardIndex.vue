@@ -1,7 +1,7 @@
 <template>
     <Head title="Dashboard"></Head>
     <div
-        class="shadow-xs mt-6 flex flex-col justify-between rounded-md border border-skin-neutral-4 bg-skin-neutral-2 px-4 py-2 md:flex-row"
+        class="border-neutral-4 bg-neutral-2 mt-6 flex flex-col justify-between rounded-md border px-4 py-2 shadow-2xs md:flex-row"
     >
         <div>
             <i class="ri-megaphone-line"></i>

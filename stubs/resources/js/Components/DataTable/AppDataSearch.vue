@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-tl rounded-tr bg-skin-neutral-3 pb-4 pl-3 pt-3">
+    <div class="bg-neutral-3 rounded-tl rounded-tr pt-3 pb-4 pl-3">
         <label for="search" class="sr-only">Search</label>
         <div class="flex items-center pr-4 align-middle">
             <div class="pointer-events-none absolute flex items-center pl-3">
@@ -15,7 +15,7 @@
 
             <AppButton
                 v-if="searchTerm"
-                class="btn ml-2 border border-skin-neutral-8 bg-skin-neutral-5 hover:bg-skin-neutral-8"
+                class="btn border-neutral-8 bg-neutral-5 hover:bg-neutral-8 ml-2 border"
                 @click="clearSearch"
             >
                 <i class="ri-close-line"></i>

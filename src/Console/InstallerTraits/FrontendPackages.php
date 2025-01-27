@@ -19,18 +19,19 @@ trait FrontendPackages
             '@inertiajs/vue3' => '^2.0.0',
 
             '@tailwindcss/forms' => '^0.5.6',
+            '@tailwindcss/postcss' => '^4.0.0',
+            '@tailwindcss/vite' => '^4.0.0',
             '@vitejs/plugin-vue' => '^5.0.4',
 
-            'autoprefixer' => '^10.4.18',
             'eslint' => '^v9.5.0',
             'eslint-config-prettier' => '^9.1.0',
-            'eslint-plugin-vue' => '^v9.23.0',
+            'eslint-plugin-vue' => '^v9.32.0',
 
             'postcss' => '^8.4.35',
             'postcss-import' => '^16.0.1',
-            'prettier' => '^3.2.5',
+            'prettier' => '^3.4.2',
             'prettier-plugin-blade' => '^2.1.18',
-            'prettier-plugin-tailwindcss' => '^v0.6.5',
+            'prettier-plugin-tailwindcss' => '^v0.6.11',
 
             '@tiptap/vue-3' => '^2.2.4',
             '@tiptap/starter-kit' => '^2.2.4',
@@ -44,18 +45,19 @@ trait FrontendPackages
             '@tiptap/extension-table-cell' => '^2.2.4',
 
             'remixicon' => '^4.2.0',
-            'tailwindcss' => '^3.3.7',
-            'unplugin-vue-components' => '^0.28.0',
+            'tailwindcss' => '^4.0.0',
+            'unplugin-vue-components' => '^v28.0.0',
             'vue' => '^3.4.21',
 
         ] + $packages);
 
         $this->removesDefaultBootstrapFile();
         $this->removeDefaultTailwindConfig();
+        $this->removeDefaultPostcssConfig();
 
         // Config files...
-        copy(__DIR__.'/../../../stubs/stack-configs/postcss.config.cjs', base_path('postcss.config.cjs'));
-        copy(__DIR__.'/../../../stubs/stack-configs/tailwind.config.cjs', base_path('tailwind.config.cjs'));
+        copy(__DIR__.'/../../../stubs/stack-configs/postcss.config.mjs', base_path('postcss.config.mjs'));
+        copy(__DIR__.'/../../../stubs/stack-configs/tailwind.config.mjs', base_path('tailwind.config.mjs'));
         copy(__DIR__.'/../../../stubs/stack-configs/jsconfig.json', base_path('jsconfig.json'));
         copy(__DIR__.'/../../../stubs/stack-configs/vite.config.js', base_path('vite.config.js'));
         copy(__DIR__.'/../../../stubs/stack-configs/eslint.config.js', base_path('eslint.config.js'));
@@ -139,6 +141,22 @@ trait FrontendPackages
             $this->components->info('Preparing frontend: default tailwind.config.js file removed.');
         } catch (\Exception $e) {
             $this->components->error('Preparing frontend: unable to remove default tailwind.config.js. Please check file permissions.');
+        }
+    }
+
+    protected function removeDefaultPostcssConfig(): void
+    {
+        $postcssConfigPath = base_path('postcss.config.js');
+
+        if (! file_exists($postcssConfigPath)) {
+            return;
+        }
+
+        try {
+            unlink($postcssConfigPath);
+            $this->components->info('Preparing frontend: default postcss.config.js file removed.');
+        } catch (\Exception $e) {
+            $this->components->error('Preparing frontend: unable to remove default postcss.config.js. Please check file permissions.');
         }
     }
 }

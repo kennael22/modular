@@ -3,7 +3,7 @@
     <AppAuthShell>
         <AppAuthLogo />
 
-        <AppCard class="w-80 space-y-2 bg-skin-neutral-2">
+        <AppCard class="bg-neutral-2 w-80 space-y-2">
             <template #title>
                 <h3 class="px-2 py-3 text-lg font-semibold tracking-tight">
                     {{ __('Forgot your password?') }}

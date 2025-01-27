@@ -1,6 +1,6 @@
 <template>
     <td
-        class="whitespace-nowrap border border-skin-neutral-6 px-2 py-1.5 font-medium"
+        class="border-neutral-6 border px-2 py-1.5 font-medium whitespace-nowrap"
     >
         <slot></slot>
     </td>
