@@ -29,7 +29,7 @@ class Translations extends Component
     {
         $appPHPTranslations = $this->getPHPTranslations(lang_path($locale));
 
-        $appJsonTranslations = $this->getJsonTranslations(lang_path("$locale/$locale.json"));
+        $appJsonTranslations = $this->getJsonTranslations(lang_path("$locale.json"));
         $modularJsonTranslations = $this->getJsonTranslations(lang_path("vendor/modular/$locale/$locale.json"));
 
         return array_merge($appPHPTranslations, $appJsonTranslations, $modularJsonTranslations);
