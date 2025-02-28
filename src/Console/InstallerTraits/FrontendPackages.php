@@ -24,7 +24,7 @@ trait FrontendPackages
             '@vitejs/plugin-vue' => '^5.0.4',
 
             'eslint' => '^v9.5.0',
-            'eslint-config-prettier' => '^9.1.0',
+            'eslint-config-prettier' => '^10.0.2',
             'eslint-plugin-vue' => '^v9.32.0',
 
             'postcss' => '^8.4.35',
