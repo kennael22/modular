@@ -59,7 +59,8 @@ export default [
         languageOptions: {
             globals: {
                 ...globals.browser,
-                route: 'readonly'
+                route: 'readonly',
+                grecaptcha: 'readonly'
             }
         },
         rules: {
