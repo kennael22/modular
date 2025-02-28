@@ -2,6 +2,7 @@ import js from '@eslint/js'
 import vue from 'eslint-plugin-vue'
 import vueParser from 'vue-eslint-parser'
 import prettierConfig from 'eslint-config-prettier'
+import globals from 'globals'
 
 export default [
     // Base ESLint recommended rules
@@ -57,15 +58,7 @@ export default [
     {
         languageOptions: {
             globals: {
-                document: 'readonly',
-                window: 'readonly',
-                FileReader: 'readonly',
-                FormData: 'readonly',
-                URLSearchParams: 'readonly',
-                localStorage: 'readonly',
-                fetch: 'readonly',
-                alert: 'readonly',
-                console: 'readonly',
+                ...globals.browser,
                 route: 'readonly'
             }
         },
