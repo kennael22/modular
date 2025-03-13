@@ -74,6 +74,7 @@
     </AppDataTable>
 
     <AppPaginator
+        v-if="{{ resourceNameCamelPlural }}.data.length"
         :links="{{ resourceNameCamelPlural }}.links"
         :from="{{ resourceNameCamelPlural }}.from || 0"
         :to="{{ resourceNameCamelPlural }}.to || 0"
