@@ -68,20 +68,20 @@
     }
 
     .dark-theme {
-        --color-indigo-1: oklch(19.09% 0.0246 276.53); /* #11131f */
-        --color-indigo-2: oklch(20.94% 0.0302 274.84); /* #141726 */
-        --color-indigo-3: oklch(27.16% 0.0705 267.98); /* #182449 */
-        --color-indigo-4: oklch(31.85% 0.0946 267.25); /* #1d2e62 */
-        --color-indigo-5: oklch(36.25% 0.1044 267.03); /* #253974 */
-        --color-indigo-6: oklch(40.33% 0.1112 268.76); /* #304384 */
-        --color-indigo-7: oklch(44.91% 0.1201 268.94); /* #3a4f97 */
-        --color-indigo-8: oklch(50.21% 0.1366 268.25); /* #435db1 */
-        --color-indigo-9: oklch(54.38% 0.191 267.01); /* #3e63dd */
-        --color-indigo-10: oklch(58.91% 0.1758 269.3); /* #5472e4 */
-        --color-indigo-11: oklch(
+        --color-primary-1: oklch(19.09% 0.0246 276.53); /* #11131f */
+        --color-primary-2: oklch(20.94% 0.0302 274.84); /* #141726 */
+        --color-primary-3: oklch(27.16% 0.0705 267.98); /* #182449 */
+        --color-primary-4: oklch(31.85% 0.0946 267.25); /* #1d2e62 */
+        --color-primary-5: oklch(36.25% 0.1044 267.03); /* #253974 */
+        --color-primary-6: oklch(40.33% 0.1112 268.76); /* #304384 */
+        --color-primary-7: oklch(44.91% 0.1201 268.94); /* #3a4f97 */
+        --color-primary-8: oklch(50.21% 0.1366 268.25); /* #435db1 */
+        --color-primary-9: oklch(54.38% 0.191 267.01); /* #3e63dd */
+        --color-primary-10: oklch(58.91% 0.1758 269.3); /* #5472e4 */
+        --color-primary-11: oklch(
             77.59% 0.11379602554211403 273.01910299548774
         ); /* #9eb1ff */
-        --color-indigo-12: oklch(91.08% 0.0427 269.55); /* #d6e1ff */
+        --color-primary-12: oklch(91.08% 0.0427 269.55); /* #d6e1ff */
 
         /* 1 - App background, 2 - Subtle background */
         --color-neutral-1: oklch(17.85% 0.0041 285.98); /* #111113 */
@@ -188,9 +188,9 @@
     --color-error-light: var(--color-error-light);
 
     /* Font Family */
-    --font-sans: Nunito, ui-sans-serif, system-ui, sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
+    --font-sans:
+        Nunito, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #nprogress .bar {
