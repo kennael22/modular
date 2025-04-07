@@ -1,6 +1,9 @@
 <template>
-    <div class="mb-4 flex items-center">
-        <AppLabel class="hover:cursor-pointer" :for="$attrs.id">
+    <div class="mb-4">
+        <AppLabel
+            class="flex items-center hover:cursor-pointer"
+            :for="$attrs.id"
+        >
             <input
                 v-bind="$attrs"
                 type="radio"

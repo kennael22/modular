@@ -2,6 +2,9 @@
     <div ref="wrapperRef" class="relative w-48">
         <AppButton
             class="bg-neutral-1 text-neutral-12 placeholder-neutral-9 ring-neutral-7 focus:ring-neutral-7 mt-1 flex w-full justify-between rounded-md border-0 px-3 py-2 align-middle ring-1 shadow-xs ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+            :class="{
+                'input-error': hasError
+            }"
             aria-haspopup="true"
             :aria-expanded="isOpen"
             @click="toggleState"
@@ -91,6 +94,10 @@ const props = defineProps({
     options: {
         type: Array,
         default: () => []
+    },
+    hasError: {
+        type: Boolean,
+        default: false
     }
 })
 
